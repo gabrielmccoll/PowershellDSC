@@ -16,7 +16,7 @@ Configuration ADDomain_NewForest_Config
     Import-DscResource -ModuleName PSDscResources
     Import-DscResource -ModuleName ActiveDirectoryDsc
     
-    Node $AllNodes.NodeName
+    Node localhost
     
     {
         
@@ -39,6 +39,12 @@ Configuration ADDomain_NewForest_Config
             SafemodeAdministratorPassword = $SafeModePassword
             ForestMode                    = 'WinThreshold'
         }
+
+
+        
+
+
+        
     }
     
         
